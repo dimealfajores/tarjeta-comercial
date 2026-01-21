@@ -1,0 +1,321 @@
+*{
+box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+    padding: 0;
+}
+.titulo-asesor {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+/*sección 1: header de la pagina
+favicon con el titulo de la empresa*/
+header {
+    background-color: #51d7c9;
+    background-image: url("foto\ 1.jpeg");  /* ← agrega la imagen */
+    background-size: 65%;
+    background-position: center 33% ;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 100px 0
+}
+
+   /*en este contenedor contendra el favicon y el titulo y se encargara de que estas dos queden centrados en la pagina principal*/
+   /* Contenedor principal que agrupa favicon y logo */
+
+/* FAVICON */
+.imagen-favicon {
+  width: 350px;
+  height: 350px;
+  background-image: url("favicon-dime.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: -25px;
+}
+
+/* Ocupa toda la fila y centra los elementos */
+.contenedor-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.contenedor-1-1 {
+    background-color: white;
+}
+   
+/*Inicio de sección:
+parrafo (p) donde esta una breve descripción de la empresa*/
+.contenedor-2 .imagen-logo{
+  width: 550px;
+  height: 250px;
+  background-image: url("logo-dime1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.contenedor-2{
+    margin: 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.contenedor-2 p {
+    margin: 5px;
+    line-height: 2;
+    font-size: 1rem;
+    text-align: center;
+}
+/* iconos de presentación de redes sociales*/
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.iconos-redes i {
+  font-size: 2.3rem;      /* tamaño de los iconos */
+  color: #00bfa6;         /* turquesa a juego con el logo */
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: default;        /* quita la manito de enlace */
+}
+
+.iconos-redes i:hover {
+  transform: scale(1.2);
+  color: #ff8c75;         /* salmón clarito al pasar el mouse */
+}
+/*sección 2: botones
+se dara la ubicación y forma de los botones que llevaran a las diferentes redes.*/
+.contenedor-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 0;
+}
+/* Sección de estilo de botones*/
+.btn {
+    display:  flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 700px;
+    height: 75px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: transform 0.2s, opacity 0.2s;
+    background-color: #C97F7F;
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+  background-color: #009E8A;
+}
+
+.btn .whatsapp {
+    background-color: #25D366;
+}
+.btn img {
+  position: absolute;
+  left: 20px;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  background-color: white; /* opcional para mejor visibilidad */
+  border-radius: 50%;
+  padding: 1px;
+  filter: grayscale(100%);
+}
+/*
+  btn:nth-child(2) { background-color: #C13584; } /* Instagram */
+  /*
+  .btn:nth-child(1) { background-color: #25D366; } /* WhatsApp */
+  /*
+  .btn:nth-child(3) { background-color: #1877F2; } /* Facebook */
+  /*
+  .btn:nth-child(5) { background-color: #000000; } /* TikTok */
+  /*
+  .btn:nth-child(6) { background-color: #0088cc; } /* Web */
+
+/*efecto de botones
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.whatsapp { background-color: #25D366; }
+.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.facebook { background-color: #1877F2; }
+.correo { background-color: #ff9800; }
+.tiktok { background-color: #000; }
+.web { background-color: #0088cc; }
+*/
+
+footer {
+    background-color: #51d7c9;
+}
+footer p {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+/* Ajustes para SVGs que reemplazan a las <img> */
+.btn svg {
+  background-color: red;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 20px;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
+  box-sizing: content-box;
+}
+.catalogo {
+    background-color: #E53935;
+  }
+  .catalogo1{
+    background-color: #C97F7F;
+  }
+
+  .nieve-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.nieve-btn::before,
+.nieve-btn::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-repeat: repeat;
+  background-size: contain;
+  animation: nevar 5s linear infinite;
+  opacity: 0.8;
+}
+
+
+/* Copos capa 2 */
+.nieve-btn::after {
+  background-image: url("imagens.webp");
+  animation-duration: 10s;
+}
+
+@keyframes nevar {
+  from { transform: translateY(-10%); }
+  to   { transform: translateY(100%); }
+}
+/*pantallas pequeñas cambian a columnas*/
+/* RESPONSIVE PARA CELULARES */
+@media (max-width: 600px) {
+  .imagen-favicon {
+    width: 180px;
+    height: 180px;
+  }
+@media (max-width: 600px) {
+
+.titulo-asesor {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+  .btn {
+    position: relative;
+    justify-content: center; /* el texto queda centrado */
+  }
+
+  .btn img {
+    position: absolute;
+    left: 20px;   /* mueve el ícono a la izquierda */
+  }
+}
+
+  .contenedor-2 .imagen-logo {
+    width: 250px;
+    height: 120px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    height: 55px;
+  }
+
+  .iconos-redes i {
+    font-size: 1.8rem;
+  }
+  /* 🔽 Los botones se contraen en móvil */
+  .btn {
+    width: 310px;
+    height: 55px;
+    font-size: 1rem;
+    border-radius: 10px;
+    gap: 8px;
+  }
+
+  .btn img {
+    filter: grayscale(100%);
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Íconos más pequeños */
+  .iconos-redes i {
+    font-size: 1.6rem;
+  }
+  .btn svg {
+  background-color: red;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 20px;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
+  box-sizing: content-box;
+}
+.catalogo {
+    background-color: #E53935;
+  }
+header {
+    background-color: #51d7c9;
+    background-image: url("foto\ 1.jpeg");  /* ← agrega la imagen */
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 80px 0
+}
+}
